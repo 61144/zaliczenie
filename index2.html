@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Varsovia | University of Future Skills</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary:#0B1C2D;
+    --accent:#00E5A8;
+    --secondary:#5B7CFF;
+    --bg:#F4F7FB;
+    --text:#0F172A;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body {
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container {
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section {
+    padding:90px 0;
+}
+
+h1,h2,h3 {
+    font-weight:800;
+    color:var(--primary);
+}
+
+p {
+    margin-top:14px;
+    opacity:.9;
+}
+
+header {
+    background:rgba(11,28,45,.95);
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.header-inner {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+    color:#fff;
+}
+
+nav a {
+    margin-left:24px;
+    color:#fff;
+    font-weight:600;
+}
+
+.btn {
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:600;
+    display:inline-block;
+    margin-top:20px;
+}
+
+.btn-primary {
+    background:var(--accent);
+    color:#002018;
+}
+
+/* HERO */
+.hero {
+    background:linear-gradient(120deg,#0B1C2D,#0E2540);
+    color:#fff;
+    text-align:center;
+    padding:150px 0;
+}
+
+.hero h1 {
+    font-size:52px;
+    color:#fff;
+}
+
+.hero p {
+    max-width:720px;
+    margin:25px auto;
+    font-size:18px;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card {
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.06);
+}
+
+.cta {
+    background:linear-gradient(120deg,var(--secondary),var(--accent));
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2 {
+    color:#fff;
+}
+
+footer {
+    background:var(--primary);
+    color:#cbd5e1;
+    text-align:center;
+    padding:50px 0;
+}
+
+@media(max-width:768px){
+    nav {display:none;}
+    .hero h1 {font-size:36px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-inner">
+        <strong>VARSOVIA</strong>
+        <nav>
+            <a href="#o-nas">O uczelni</a>
+            <a href="#oferta">Oferta</a>
+            <a href="#rekrutacja">Rekrutacja</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+        <a class="btn btn-primary">Aplikuj</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1>University of Future Skills</h1>
+        <p>
+            Varsovia to nowoczesna uczelnia wyższa, która łączy akademickie fundamenty
+            z realnymi kompetencjami przyszłości. Kształcimy ludzi gotowych na zmiany,
+            rynek pracy i dynamiczny świat technologii.
+        </p>
+        <a class="btn btn-primary">Poznaj ofertę studiów</a>
+    </div>
+</section>
+
+<!-- O NAS -->
+<section id="o-nas">
+    <div class="container">
+        <h2>Kim jesteśmy</h2>
+        <p>
+            Varsovia to uczelnia niepubliczna działająca w wielu miastach w Polsce,
+            oferująca studia licencjackie, magisterskie oraz podyplomowe.
+            Naszą misją jest tworzenie środowiska edukacyjnego, które odpowiada
+            na realne potrzeby studentów i pracodawców.
+        </p>
+        <p>
+            Stawiamy na praktykę, nowoczesne programy nauczania oraz elastyczne formy studiowania.
+            Dzięki temu nasi studenci mogą łączyć naukę z pracą, rozwojem osobistym
+            i życiem prywatnym.
+        </p>
+    </div>
+</section>
+
+<!-- DLACZEGO VARSOVIA -->
+<section>
+    <div class="container">
+        <h2>Dlaczego Varsovia?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Praktyczne podejście</h3>
+                <p>
+                    Programy studiów są projektowane we współpracy z praktykami
+                    i ekspertami z branży. Zajęcia koncentrują się na umiejętnościach,
+                    które mają realną wartość na rynku pracy.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Elastyczne formy nauki</h3>
+                <p>
+                    Oferujemy studia stacjonarne, niestacjonarne, online oraz hybrydowe.
+                    Dzięki temu możesz studiować z dowolnego miejsca, bez rezygnowania
+                    z innych obowiązków.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Wsparcie i rozwój</h3>
+                <p>
+                    Zapewniamy opiekę administracyjną, doradztwo oraz dostęp do nowoczesnych
+                    narzędzi edukacyjnych, które wspierają rozwój kompetencji zawodowych.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- OFERTA -->
+<section id="oferta">
+    <div class="container">
+        <h2>Oferta edukacyjna</h2>
+        <p>
+            Oferta Varsovii obejmuje kierunki z obszaru zarządzania, mediów,
+            nauk społecznych oraz nowoczesnych technologii.
+            Studenci mogą wybierać ścieżki dopasowane do swoich zainteresowań
+            i planów zawodowych.
+        </p>
+        <div class="grid">
+            <div class="card">
+                <h3>Zarządzanie</h3>
+                <p>
+                    Kierunek dla przyszłych liderów, menedżerów i przedsiębiorców.
+                    Studia rozwijają kompetencje z zakresu strategii, HR, marketingu
+                    oraz zarządzania projektami.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Media i komunikacja</h3>
+                <p>
+                    Program skoncentrowany na mediach cyfrowych, PR, social media
+                    oraz komunikacji w nowoczesnych organizacjach.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Studia podyplomowe</h3>
+                <p>
+                    Specjalistyczne programy dla osób chcących poszerzyć kwalifikacje,
+                    zdobyć nowe kompetencje lub przekwalifikować się zawodowo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REKRUTACJA -->
+<section id="rekrutacja">
+    <div class="container">
+        <h2>Rekrutacja bez barier</h2>
+        <p>
+            Proces rekrutacji w Varsovii został zaprojektowany tak,
+            aby był prosty, szybki i przyjazny dla kandydatów.
+            Oferujemy jasne zasady, wsparcie doradców oraz możliwość
+            rozpoczęcia studiów w różnych terminach.
+        </p>
+        <p>
+            Kandydaci mogą aplikować online, bez zbędnych formalności,
+            a decyzja o przyjęciu podejmowana jest sprawnie i transparentnie.
+        </p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Twoja przyszłość zaczyna się dziś</h2>
+        <p>
+            Dołącz do społeczności Varsovii i studiuj w miejscu,
+            które rozumie wyzwania współczesnego świata.
+        </p>
+        <a class="btn btn-primary">Aplikuj teraz</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="kontakt">
+    <div class="container">
+        <p><strong>Varsovia – University of Future Skills</strong></p>
+        <p>Studia licencjackie • magisterskie • podyplomowe</p>
+        <p>© 2026 Varsovia</p>
+    </div>
+</footer>
+
+</body>
+</html>
